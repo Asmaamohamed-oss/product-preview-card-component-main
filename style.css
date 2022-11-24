@@ -111,7 +111,7 @@ div.product__content{
     display: grid;
     gap: 15px;
 }
-@media (min-width:590px){
+@media (min-width:600px){
     div.product__content{
         padding: 32px;
     }
