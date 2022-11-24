@@ -56,8 +56,7 @@ input, button, textarea, select {
 */
 
 p, h1, h2, h3, h4, h5, h6 {
-    /* overflow-wrap:break-word; */
-    word-wrap: break-word;
+    overflow-wrap:break-word;
 }
 
 
@@ -120,7 +119,6 @@ div.product__content{
 div.product__content p.perfume-title{
     text-transform: uppercase;
     letter-spacing: 5px;
-    /* font-size: 13px; */
 }
 
 div.product__content h1.product__title{
