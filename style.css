@@ -1,0 +1,167 @@
+
+:root{
+    --cream-color--:hsl(30, 38%, 92%);
+    --dark-green--: hsl(158, 36%, 37%);
+    --dark-color--: hsl(212, 21%, 14%);
+    --gray-color--: hsl(228, 12%, 48%);
+    --white-color--: hsl(0, 0%, 100%);
+    --main-font:'Montserrat', sans-serif;
+    --secondary--font:"Fraunces",serif;
+    --fw-500:500;
+    --fw-700:700;
+    --border--radius:8px;
+}
+/*
+1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+/*
+    2. Remove default margin
+  */
+* {
+    margin: 0;
+}
+/*
+    3. Allow percentage-based heights in the application
+  */
+html, body {
+    height: 100%;
+}
+/*
+Typographic tweaks!
+4. Add accessible line-height
+5. Improve text rendering
+*/
+body {
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+}
+/*
+6. Improve media defaults
+*/
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+/*
+7. Remove built-in form typography styles
+*/
+input, button, textarea, select {
+    font: inherit;
+}
+/*
+8. Avoid text overflows
+*/
+
+p, h1, h2, h3, h4, h5, h6 {
+    /* overflow-wrap:break-word; */
+    word-wrap: break-word;
+}
+
+
+body{
+    font-family: var(--main-font);
+    font-weight: var(--fw-500);
+    color: var(--gray-color--);
+    font-size: 14px;
+    background-color: var(--cream-color--);
+    display: grid;
+    place-items: center;
+    margin:0 15px ;
+}
+
+
+
+article.product{
+    display: grid;
+    background-color: var(--white-color--);
+    border-radius: var(--border--radius);
+    overflow: hidden;
+    max-width: 600px;
+}
+
+@media (min-width:590px) {
+    article.product{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+/*changing the logic of set the desktop img 
+insted media queries by using pricture and source elemnts*/
+/* .product__img img.moblie-img{
+    display: block;
+} */
+/* @media (min-width:550px) {
+    .product__img img.moblie-img{
+        display: none;
+    }
+}
+.product__img img.desktop-img{
+    display: none;
+} */
+/* @media (min-width:550px) {
+    .product__img img.desktop-img{
+        display: block;
+    }
+} */
+
+div.product__content{
+    padding: 24px;
+    display: grid;
+    gap: 15px;
+}
+@media (min-width:590px){
+    div.product__content{
+        padding: 32px;
+    }
+}
+div.product__content p.perfume-title{
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    /* font-size: 13px; */
+}
+
+div.product__content h1.product__title{
+    color: var(--dark-color--);
+    font-family: var(--secondary--font);
+    font-size: 32px;
+    line-height: 1;
+}
+
+
+div.product__content div.product__prices{
+    display: flex;
+}
+div.product__content div.product__prices p.large-price{
+    color: var(--dark-green--);
+    font-family: var(--secondary--font);
+    font-size: 32px;
+    margin-right: 20px;
+    font-weight: var(--fw-700);
+}
+div.product__content div.product__prices p.small-price{
+    text-decoration:line-through;
+    align-self: center;
+    font-size: 12px;
+}
+
+button.btn{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    outline: 0;
+    border: 0;
+    border-radius:var(--border--radius);
+    background-color: var(--dark-green--);
+    color: var(--white-color--);
+    font-weight: var(--fw-700);
+    padding: 10px 0;
+    transition: background-color .4s;
+}
+button.btn:is(:hover,:focus){
+    background-color:hsl(158, 68%, 17%); ;
+}
