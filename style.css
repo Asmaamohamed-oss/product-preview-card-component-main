@@ -81,7 +81,7 @@ article.product{
     max-width: 600px;
 }
 
-@media (min-width:590px) {
+@media (min-width:600px) {
     article.product{
         grid-template-columns: repeat(2,1fr);
     }
@@ -113,7 +113,7 @@ div.product__content{
 }
 @media (min-width:600px){
     div.product__content{
-        padding: 32px;
+        padding: 28px;
     }
 }
 div.product__content p.perfume-title{
