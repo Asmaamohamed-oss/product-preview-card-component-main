@@ -115,12 +115,6 @@ div.product__content{
         padding: 28px;
     }
 }
-@media (min-width:300px) {
-    div.product__content{
-        background-color:  hsl(158, 89%, 71%);
-    }
-}
-
 
 div.product__content p.perfume-title{
     text-transform: uppercase;
