@@ -120,11 +120,7 @@ div.product__content{
         background-color: lightgreen;
     }
 }
-@media (min-width:400px) {
-    div.product__content{
-        background-color: #fff;
-    }
-}
+
 
 div.product__content p.perfume-title{
     text-transform: uppercase;
