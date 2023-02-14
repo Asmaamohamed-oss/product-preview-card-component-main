@@ -117,7 +117,7 @@ div.product__content{
 }
 @media (min-width:300px) {
     div.product__content{
-        background-color: lightgreen;
+        background-color:  hsl(158, 89%, 71%);
     }
 }
 
